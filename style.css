@@ -1,0 +1,90 @@
+
+:root {
+  --background-color: #314453;
+  --darker-background-color: #243848;
+  --accent-color: #41dce1;
+  --text-color: #ffffff;
+  --navbar-hide-pc: 70px;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html {
+  background-color: var(--darker-background-color);
+  display: flex;
+  justify-content: center;
+}
+body {
+
+  font-family: "Roboto", "Verdana", "Calibri", sans-serif;
+  line-height: 1.5;
+  background-color: var(--background-color);
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
+}
+.container-main {
+  width: 90vw;
+  top: var(--navbar-hide-pc);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*Seitenüberschrift*/
+h1 {
+  text-align: center;
+  letter-spacing: 5px;
+}
+a {
+
+  text-decoration: none;
+  color: var(--background-color);
+}
+.todo-container {
+  background: var(--darker-background-color);
+  width: 50%;
+  border-radius: 10px;
+  border: 1px solid rgb(255, 255, 255, 0.3);
+  margin-top: 50px;
+  padding: 20px;
+}
+h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+.formular {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#inputfield {
+  width: 80%;
+  font-size: 16px;
+}
+
+#toDoList-container li {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  list-style: none;
+  font-size: 16px;
+}
+
+@media (max-width: 790px) {
+  /*Bereich Main*/
+  .todo-container {
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255, 0.3);
+  }
+  #inputfield {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+}
