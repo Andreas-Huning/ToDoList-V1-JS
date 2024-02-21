@@ -19,7 +19,6 @@ html {
   justify-content: center;
 }
 body {
-
   font-family: "Roboto", "Verdana", "Calibri", sans-serif;
   line-height: 1.5;
   background-color: var(--background-color);
